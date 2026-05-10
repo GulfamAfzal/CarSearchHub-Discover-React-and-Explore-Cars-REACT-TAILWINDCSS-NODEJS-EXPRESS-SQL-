@@ -6,7 +6,7 @@ import { CarsContext } from './carsContext/CarsContext'
 
 const Test = () => {
   ////  exemple of null ////////////
-  const { searchValue, setSearchValue } = useContext(SearchTermContext)
+  const { searchValue } = useContext(SearchTermContext)
 
   // const [cars, setCars] = useState(null)
   const { cars, setCars } = useContext(CarsContext)
@@ -21,7 +21,7 @@ const Test = () => {
         // console.log(data)
       });
 
-  }, [searchValue])
+  }, [searchValue, setCars])
 
   if (cars == null)
 

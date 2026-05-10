@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import Slider from "react-slick";
-import { CarsContext } from "../carsContext/CarsContext";
+// import { CarsContext } from "../carsContext/CarsContext";
 
 const CardsCaroussel = ({ img, img1, img2, img3 }) => {
-    const { cars, setCars } = useContext(CarsContext)
+    // const { cars, setCars } = useContext(CarsContext)
     // console.log(cars)
 
     const pics = [

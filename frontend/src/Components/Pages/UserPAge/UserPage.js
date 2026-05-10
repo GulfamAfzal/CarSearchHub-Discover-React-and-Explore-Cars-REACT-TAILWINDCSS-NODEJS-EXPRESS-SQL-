@@ -9,7 +9,7 @@ const UserPage = () => {
     const { id } = useParams();
     // console.log(useParams())
 
-    const { user, setUser } = useContext(UserContext)
+    const { user } = useContext(UserContext)
 
     return (
         <>

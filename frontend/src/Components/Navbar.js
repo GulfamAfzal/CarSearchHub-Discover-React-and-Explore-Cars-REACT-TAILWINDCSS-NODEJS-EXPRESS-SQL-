@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
     }
-  }, [])
+  }, [setUser])
 
 
   const openModal = () => {

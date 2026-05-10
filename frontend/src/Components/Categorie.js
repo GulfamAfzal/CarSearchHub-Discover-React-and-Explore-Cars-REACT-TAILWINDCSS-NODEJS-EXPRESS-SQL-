@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Carcard from './Carcard';
 import { SearchTermContext } from '../searchTermContext/SearchTermContext';
 import CircularProgress from '@mui/material/CircularProgress'
@@ -11,7 +11,7 @@ const Categorie = () => {
     /*fetching the movie information*/
     const { id } = useParams();
     // console.log(useParams())
-    const { searchValue, setSearchValue } = useContext(SearchTermContext)
+    const { searchValue } = useContext(SearchTermContext)
 
     const [categorieData, setCategorieData] = useState(null)
 

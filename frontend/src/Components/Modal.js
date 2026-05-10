@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose }) => {
                 // console.log(data)
             });
 
-    }, [searchValue])
+    }, [searchValue, setCars])
 
     const handleCloseModal = () => {
         setSearchValue('');

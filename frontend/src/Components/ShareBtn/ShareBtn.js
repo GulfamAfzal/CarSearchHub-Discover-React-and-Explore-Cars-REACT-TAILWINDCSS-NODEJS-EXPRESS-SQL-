@@ -1,7 +1,6 @@
 import React from 'react'
 import './shareBtn.css'
-import { Link } from 'react-router-dom'
-import { FacebookShareButton, FacebookShareCount, TwitterShareButton, WhatsappShareButton } from "react-share";
+import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 
 
 const ShareBtn = ({ id_Car }) => {
@@ -19,7 +18,7 @@ const ShareBtn = ({ id_Car }) => {
                     </span>
                     <ul>
                         <li>
-                            <a href=''>
+                            <a href='#!'>
                                 <WhatsappShareButton
                                     url={`http://localhost:3000/Detail/${id_Car}`}
                                     quote={"Supercars"}
@@ -35,7 +34,7 @@ const ShareBtn = ({ id_Car }) => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#!">
                                 <TwitterShareButton
                                     url={`http://localhost:3000/Detail/${id_Car}`}
                                     quote={"フェイスブックはタイトルが付けれるようです"}
@@ -51,7 +50,7 @@ const ShareBtn = ({ id_Car }) => {
 
                         </li>
                         <li>
-                            <a href=''>
+                            <a href='#!'>
                                 <FacebookShareButton
                                     url={`http://localhost:3000/Detail/${id_Car}`}
                                     quote={"フェイスブックはタイトルが付けれるようです"}

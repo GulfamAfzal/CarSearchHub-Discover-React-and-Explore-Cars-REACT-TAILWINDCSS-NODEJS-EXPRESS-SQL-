@@ -18,7 +18,7 @@ function SignInForm({ close, SignStat }) {
     });
 
 
-    const { user, setUser } = useContext(UserContext)
+    const { setUser } = useContext(UserContext)
 
     const handleChangeAuth = (e) => {
         setAuthData({ ...authData, [e.target.name]: e.target.value });
@@ -119,7 +119,7 @@ function SignInForm({ close, SignStat }) {
             setUser(clientData)
 
         }
-    }, [])
+    }, [setUser])
 
 
     return (
