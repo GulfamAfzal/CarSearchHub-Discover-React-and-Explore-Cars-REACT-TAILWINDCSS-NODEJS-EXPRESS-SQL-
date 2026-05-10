@@ -80,7 +80,7 @@ app.get('/userCarCollection/:id', async (req, res) => {
     const Client_IDInfo = req.params.id
     let ClientallInfo = await getclientCar(Client_IDInfo)
     console.log(ClientallInfo)
-    ClientallInfo= ClientallInfo==='undefined'? ["error"] :ClientallInfo
+    ClientallInfo = ClientallInfo === 'undefined' ? ["error"] : ClientallInfo
     //console.log(ClientallInfo)
     res.send(ClientallInfo)
 })

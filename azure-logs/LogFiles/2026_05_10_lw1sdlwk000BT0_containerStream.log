@@ -1,0 +1,31 @@
+2026-05-10T12:04:02.4218639Z     __ __          __      __    _ __     
+2026-05-10T12:04:02.4306026Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-05-10T12:04:02.4306316Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-05-10T12:04:02.4306348Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-05-10T12:04:02.4306375Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-05-10T12:04:02.4306398Z 
+2026-05-10T12:04:02.4306449Z                                           
+2026-05-10T12:04:02.4306506Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-05-10T12:04:02.4306529Z 
+2026-05-10T12:04:02.4306553Z Documentation: http://aka.ms/webapp-linux
+2026-05-10T12:04:02.4306583Z Kudu Version : 20260420.5
+2026-05-10T12:04:02.4306611Z Commit       : 7a094e2df1cfed4581bd19068ff5e3be7c578796
+2026-05-10T12:04:02.4306637Z Instance Name: lw1sdlwk000BT0
+2026-05-10T12:04:02.4306671Z Instance Id  : bec1e06e53eec8d5c5f389b3597570d9375ce0ef48cc72401db89ecd02d82bd0
+2026-05-10T12:04:02.4306695Z 
+2026-05-10T12:04:03.4230050Z chown: changing ownership of '/temp': Operation not permitted
+2026-05-10T12:04:03.4333931Z chmod: changing permissions of '/temp': Operation not permitted
+2026-05-10T12:04:08.2491144Z Restarting OpenBSD Secure Shell server: sshd.
+2026-05-10T12:04:08.3872577Z node not running, starting node /opt/webssh/index.js
+2026-05-10T12:04:21.6791562Z Sun May 10 12:04:21 UTC 2026 running .net core
+2026-05-10T12:04:23.9328140Z Startup : 12.04.23.798485
+2026-05-10T12:04:23.9819665Z Configure Services : 12.04.23.974161
+2026-05-10T12:04:24.9566381Z Configure : 12.04.24.956291
+2026-05-10T12:04:26.4052511Z Setting Up Routes : 12.04.26.397232
+2026-05-10T12:04:26.5328186Z Exiting Configure : 12.04.26.515700
+2026-05-10T12:04:27.5105931Z Hosting environment: Production
+2026-05-10T12:04:27.5106366Z Content root path: /opt/Kudu
+2026-05-10T12:04:27.5106403Z Now listening on: http://0.0.0.0:8181
+2026-05-10T12:04:27.5106451Z Application started. Press Ctrl+C to shut down.
+2026-05-10T12:04:36.1515180Z listening on port 7000
+2026-05-10T12:04:37.4408817Z Connected to MSSQL

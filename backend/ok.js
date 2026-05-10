@@ -1,38 +1,33 @@
-import {getCar,getCars} from './database.js';
+import { getCar, getCars } from './database.js';
 import cors from 'cors';
-
 import express from "express";
-///////// put the port and the app in a canstants ///////////
-const port=7000;
+
 const app = express();
-/////////////////////////////////////////////
 
-//////// enable the JSON Data //////////////////////
+const port = process.env.PORT || 7000;
+
 app.use(express.json());
-////////////////////////////////
-
-////////// core ///////////////
 app.use(cors());
-//////////////////////////////
 
+app.get('/', (req, res) => {
+    res.send("Server Running");
+});
 
 app.get('/Supercars', async (req, res) => {
-   const cars = await getCars()
-   res.send(cars)
+    const cars = await getCars();
+    res.send(cars);
 });
 
-
-////////// get car by id //////////////////
 app.get('/Supercars/:id', async (req, res) => {
-    const cars = await getCar(id)
-    res.send(cars)
-    
-    })
 
-////////////// port ///////////////////
+    const id = req.params.id;
 
-app.listen(port,()=>{
-    console.log('listening on port 7000')
+    const car = await getCar(id);
+
+    res.send(car);
+
 });
 
-//////////////////////////////////////
+app.listen(port, () => {
+    console.log(`listening on port ${port}`);
+});

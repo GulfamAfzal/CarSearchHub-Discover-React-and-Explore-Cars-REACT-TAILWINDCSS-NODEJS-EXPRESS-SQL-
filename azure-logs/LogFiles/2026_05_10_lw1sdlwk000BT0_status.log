@@ -1,0 +1,37 @@
+2026-05-10T12:04:17.7748674Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Site stopped at 05/10/2026 12:03:45 (UTC), DetailsLevel: ERR
+2026-05-10T12:04:20.8132134Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Site stopped at 05/10/2026 12:03:45 (UTC), DetailsLevel: ERR
+2026-05-10T12:04:20.8222921Z Container start method called.
+2026-05-10T12:04:20.8224322Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Pulling image acrtaskappgulfam.azurecr.io/taskapp-backend:v1 for app-taskapp-backend-gulfam_main., DetailsLevel: INFO
+2026-05-10T12:04:20.8226092Z Establishing network.
+2026-05-10T12:04:20.8227568Z Pulling image: acrtaskappgulfam.azurecr.io/taskapp-backend:v1.
+2026-05-10T12:04:30.4145050Z Image acrtaskappgulfam.azurecr.io/taskapp-backend:v1 is pulled from registry acrtaskappgulfam.azurecr.io
+2026-05-10T12:04:30.4243321Z Container is starting.
+2026-05-10T12:04:30.4451157Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Mounting volumes for app-taskapp-backend-gulfam_main., DetailsLevel: INFO
+2026-05-10T12:04:30.4464314Z Establishing user namespace if not established already.
+2026-05-10T12:04:30.4471626Z Establishing network if not established already.
+2026-05-10T12:04:30.4474010Z Mounting volumes.
+2026-05-10T12:04:30.4519990Z Nested mountpoint volatile/logs
+2026-05-10T12:04:30.4622815Z Nested mountpoint 
+2026-05-10T12:04:30.5205919Z Nested mountpoint 
+2026-05-10T12:04:30.7261194Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for app-taskapp-backend-gulfam_main. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-10T12:04:30.7265433Z Creating container.
+2026-05-10T12:04:30.7466892Z Creating pipes for streaming container io.
+2026-05-10T12:04:30.8037576Z Creating stdout named pipe at /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stdout_376b4b6534e84a158955a48cb18ffc77.
+2026-05-10T12:04:30.8053473Z Successfully created stdout named pipe at: /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stdout_376b4b6534e84a158955a48cb18ffc77.
+2026-05-10T12:04:30.8128160Z Opening named pipe /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stdout_376b4b6534e84a158955a48cb18ffc77 for reading in non-blocking mode.
+2026-05-10T12:04:30.8138552Z Successfully opened named pipe: /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stdout_376b4b6534e84a158955a48cb18ffc77.
+2026-05-10T12:04:30.8146835Z Successfully removed non-blocking flag from /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stdout_376b4b6534e84a158955a48cb18ffc77.
+2026-05-10T12:04:30.8161770Z Creating stderr named pipe at /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stderr_3ef417ac4b394d7e8af86bc4bbcb1df6.
+2026-05-10T12:04:30.8229972Z Successfully created stderr named pipe at: /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stderr_3ef417ac4b394d7e8af86bc4bbcb1df6.
+2026-05-10T12:04:30.8241927Z Opening named pipe /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stderr_3ef417ac4b394d7e8af86bc4bbcb1df6 for reading in non-blocking mode.
+2026-05-10T12:04:30.8252000Z Successfully opened named pipe: /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stderr_3ef417ac4b394d7e8af86bc4bbcb1df6.
+2026-05-10T12:04:30.8340258Z Successfully removed non-blocking flag from /podr/container/pipe/010e6c230dcf_app-taskapp-backend-gulfam_main/stderr_3ef417ac4b394d7e8af86bc4bbcb1df6.
+2026-05-10T12:04:30.8351723Z Creating container with image: acrtaskappgulfam.azurecr.io/taskapp-backend:v1 from registry: acrtaskappgulfam.azurecr.io and fully qualified image name: acrtaskappgulfam.azurecr.io/taskapp-backend:v1
+2026-05-10T12:04:31.8356097Z Starting container: 010e6c230dcf_app-taskapp-backend-gulfam_main.
+2026-05-10T12:04:31.9201943Z Starting watchers and probes.
+2026-05-10T12:04:31.9267003Z Starting metrics collection.
+2026-05-10T12:04:31.9272663Z Container is running.
+2026-05-10T12:04:31.9273573Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Container app-taskapp-backend-gulfam_main successfully created and is running., DetailsLevel: INFO
+2026-05-10T12:04:32.0751962Z Container start method finished after 11252 ms.
+2026-05-10T12:04:32.0841511Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Container app-taskapp-backend-gulfam_main successfully created and is running., DetailsLevel: INFO
+2026-05-10T12:04:32.0842391Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/10/2026 12:03:38, LastErrorDetails: Container did not start within expected time limit of 1800s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO

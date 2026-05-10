@@ -1,0 +1,1 @@
+<step title="Startup Request" date="2026-05-10T09:02:44.760" instance="bec1e0" url="/api/logstreamV2/?max=50&amp;nextToken=eyJmaWQiOjYzOTE0MDAwNTUwNTUyNTUxMSwicG9zIjozNjQzNiwiZmlyc3Rsb2d1dGMiOjYzOTEzOTk4MDg1MzQ3MzQwNn0=&amp;api-version=2022-03-01" method="GET" type="request" pid="836,1,15" ScmType="None" /><!-- duration: 28ms -->
