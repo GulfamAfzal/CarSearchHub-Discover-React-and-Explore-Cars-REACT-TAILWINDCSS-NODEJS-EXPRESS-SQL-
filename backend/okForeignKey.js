@@ -5,7 +5,7 @@ import multer from "multer"
 import fs from 'fs'
 
 ///////// put the port and the app in a canstants ///////////
-const port = 7000;
+const port = process.env.PORT || 7000;
 const app = express();
 /////////////////////////////////////////////
 
@@ -155,8 +155,8 @@ app.put('/updateLikes/:id', async (req, res) => {
 
 ////////////// port ///////////////////
 
-app.listen(port, () => {
-    console.log('listening on port 7000')
+app.listen(port, '0.0.0.0', () => {
+    console.log(`listening on port ${port}`)
 });
 
 //////////////////////////////////////

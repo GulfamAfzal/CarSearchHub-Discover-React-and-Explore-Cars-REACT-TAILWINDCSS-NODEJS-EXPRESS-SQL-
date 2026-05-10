@@ -15,7 +15,7 @@ const VoitureDetail = () => {
     const [carDetails, setCarDetails] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:7000/Detail_Car/${id}`)
+        fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/Detail_Car/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setCarDetails(data);

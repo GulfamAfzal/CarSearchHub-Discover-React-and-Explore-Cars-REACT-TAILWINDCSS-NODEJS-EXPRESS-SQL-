@@ -53,7 +53,7 @@ function SignInForm({ close, SignStat }) {
         e.preventDefault();
         const { emailAuth, passwordAuth } = authData;
         try {
-            const response = await fetch('http://localhost:7000/authenticate', {
+            const response = await fetch(`\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}/authenticate`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ function SignInForm({ close, SignStat }) {
         e.preventDefault();
         const { name, surname, email, phone, password } = formData;
         try {
-            const response = await fetch('http://localhost:7000/register', {
+            const response = await fetch(`\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

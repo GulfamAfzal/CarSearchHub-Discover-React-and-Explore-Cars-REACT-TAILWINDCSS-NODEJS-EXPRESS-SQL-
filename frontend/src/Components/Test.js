@@ -14,7 +14,7 @@ const Test = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:7000/supercars")
+    fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/supercars`)
       .then((res) => res.json())
       .then((data) => {
         setCars(data.filter((datas) => datas.Car_Marque.toLowerCase().includes(searchValue) || datas.Car_Name.toLowerCase().includes(searchValue)));

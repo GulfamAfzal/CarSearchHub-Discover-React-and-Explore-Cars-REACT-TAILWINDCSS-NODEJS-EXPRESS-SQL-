@@ -28,7 +28,7 @@ const Carcard = ({ id, name, marque, image, imagePath, image1, image2, image3, l
     const handleLike = async () => {
         try {
             const newLikes = likes === count ? count + 1 : count - 1;
-            const response = await fetch(`http://localhost:7000/updateLikes/${id}`, {
+            const response = await fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/updateLikes/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
