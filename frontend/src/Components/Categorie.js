@@ -16,7 +16,7 @@ const Categorie = () => {
     const [categorieData, setCategorieData] = useState(null)
 
     useEffect(() => {
-        fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/bycategories/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:7000'}/bycategories/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setCategorieData(data);

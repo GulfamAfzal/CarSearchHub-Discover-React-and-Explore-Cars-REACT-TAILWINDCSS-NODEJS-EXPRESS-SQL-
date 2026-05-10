@@ -17,7 +17,7 @@ const Dropdown = () => {
     const [categories, setCategories] = useState("")
 
     useEffect(() => {
-        fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/Categories`)
+        fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:7000'}/Categories`)
             .then((res) => res.json())
             .then((data) => {
                 setCategories(data);

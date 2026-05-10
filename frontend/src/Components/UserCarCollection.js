@@ -6,7 +6,7 @@ const UserCarCollection = ({ user_id }) => {
     const [userCarCollection, setUserCarCollection] = useState([])
 
     useEffect(() => {
-        fetch(`\${process.env.REACT_APP_API_URL || `\${process.env.REACT_APP_API_URL || 'http://localhost:7000'}`}/userCarCollection/${user_id}`)
+        fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:7000'}/userCarCollection/${user_id}`)
             .then(function(res){
                 console.log(res)
                 return res.json()
